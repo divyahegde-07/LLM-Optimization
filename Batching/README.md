@@ -17,6 +17,7 @@ This notebook demonstrates **batching techniques** for Large Language Model (LLM
 
 # Example with 3 prompts of different lengths
 prompts = [
+
     'The quick brown fox jumped over the',  # 7 tokens
     
     'Never have I ever',                    # 4 tokens  
