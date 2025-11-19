@@ -22,10 +22,10 @@ prompts = [
     'What comes up must'                    # 4 tokens
 ]
 
-# After padding (left-padded):
-# [1, 1, 1, 1, 1, 1, 1]  ← all real tokens
-# [0, 0, 0, 1, 1, 1, 1]  ← 3 padding + 4 real
-# [0, 0, 0, 1, 1, 1, 1]  ← 3 padding + 4 real
+ After padding (left-padded):
+ [1, 1, 1, 1, 1, 1, 1]  ← all real tokens
+ [0, 0, 0, 1, 1, 1, 1]  ← 3 padding + 4 real
+ [0, 0, 0, 1, 1, 1, 1]  ← 3 padding + 4 real
 
 ### 2. **Position IDs**
 - **Purpose**: Tell the model the position of each token in its sequence
