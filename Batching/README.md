@@ -25,7 +25,9 @@ prompts = [
 # After padding (left-padded):
 # [1, 1, 1, 1, 1, 1, 1]  ← all real tokens
 # [0, 0, 0, 1, 1, 1, 1]  ← 3 padding + 4 real
-# [0, 0, 0, 1, 1, 1, 1]  ← 3 padding + 4 real### 2. **Position IDs**
+# [0, 0, 0, 1, 1, 1, 1]  ← 3 padding + 4 real
+
+### 2. **Position IDs**
 - **Purpose**: Tell the model the position of each token in its sequence
 - **Generation**: `position_ids = attention_mask.cumsum(dim=-1) - 1`
 - **Result**: Padding tokens get position -1, real tokens get 0, 1, 2, 3...
