@@ -18,13 +18,17 @@ This notebook demonstrates **batching techniques** for Large Language Model (LLM
 # Example with 3 prompts of different lengths
 prompts = [
     'The quick brown fox jumped over the',  # 7 tokens
+    
     'Never have I ever',                    # 4 tokens  
+    
     'What comes up must'                    # 4 tokens
 ]
 
  After padding (left-padded):
  [1, 1, 1, 1, 1, 1, 1]  ← all real tokens
+ 
  [0, 0, 0, 1, 1, 1, 1]  ← 3 padding + 4 real
+ 
  [0, 0, 0, 1, 1, 1, 1]  ← 3 padding + 4 real
 
 ### 2. **Position IDs**
